@@ -1,0 +1,83 @@
+/*
+Released under GNU GPL Version 3
+Copyright Devadutta Ghat 2010
+http://devadutta.net
+*/
+
+#stdout{
+border:none 0px;
+font-size:11pt;
+font-family:monospace;
+margin:0px;
+width: 90%;
+}
+
+#stdin {
+border: none 0px;
+font-family: monospace;
+font-size: 12px;
+margin: 0px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+padding: 0px;
+padding-top: 0px;
+padding-right: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+width: 100%;
+font-weight:bold;
+color:green;
+}
+
+.stdin2 {
+border: none 0px;
+font-family: monospace;
+font-size: 12px;
+margin: 0px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+padding: 0px;
+padding-top: 0px;
+padding-right: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+width: 100%;
+font-weight:bold;
+color:green;
+outline:none;
+}
+
+
+input.stdinput {
+border:0px solid white;
+border-style:none;
+font-size:11pt;
+font-family:monospace;
+margin:0px;
+width: 90%;
+color:green;
+font-weight:bold;
+outline:none;
+
+}
+
+#container {
+       border: solid 2px blue;
+       width: 320px;
+       padding: 10px 10px 10px 10px;
+}
+body {
+        font-size: 10pt;
+        font-family: sans-serif;
+}
+
+input
+{
+font-size:8pt;
+}
+
+
