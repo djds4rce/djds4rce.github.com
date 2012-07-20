@@ -2,82 +2,217 @@
 Released under GNU GPL Version 3
 Copyright Devadutta Ghat 2010
 http://devadutta.net
-*/
+ */
+
+@font-face {
+  font-family: "asciid";
+  src: url("asciid.[fontvir.us].ttf");
+}
+
+@font-face {
+  font-family: "ubuntu";
+  src: url("Ubuntu-Title.ttf");
+}
 
 #stdout{
-border:none 0px;
-font-size:11pt;
-font-family:monospace;
-margin:0px;
-width: 90%;
+  border:none 0px;
+  font-family:monospace;
+  color:green;
+  margin:0px;
+  width: 90%;
+}
+
+#header {
+  border:none 0px;
+  font-family:"asciid";
+  color:green;
+}
+
+#main-text {
+  font-size:90px;
+}
+
+#tag-text {
+font-size:15px;
 }
 
 #stdin {
-border: none 0px;
-font-family: monospace;
-font-size: 12px;
-margin: 0px;
-margin-top: 0px;
-margin-right: 0px;
-margin-bottom: 0px;
-margin-left: 0px;
-padding: 0px;
-padding-top: 0px;
-padding-right: 0px;
-padding-bottom: 0px;
-padding-left: 0px;
-width: 100%;
-font-weight:bold;
-color:green;
+  border: none 0px;
+  font-family: monospace;
+  font-size: 12px;
+  margin: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  width: 100%;
+  font-weight:bold;
+  color:green;
+}
+.stdinput {
+  background:black;
 }
 
+#stdout-executed {
+  font-weight:bold;
+  color:green;
+}
 .stdin2 {
-border: none 0px;
-font-family: monospace;
-font-size: 12px;
-margin: 0px;
-margin-top: 0px;
-margin-right: 0px;
-margin-bottom: 0px;
-margin-left: 0px;
-padding: 0px;
-padding-top: 0px;
-padding-right: 0px;
-padding-bottom: 0px;
-padding-left: 0px;
-width: 100%;
-font-weight:bold;
-color:green;
-outline:none;
+  border: none 0px;
+  font-family: monospace;
+  font-size: 12px;
+  margin: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  width: 100%;
+  font-weight:bold;
+  color:green;
+  outline:none;
 }
 
 
 input.stdinput {
-border:0px solid white;
-border-style:none;
-font-size:11pt;
-font-family:monospace;
-margin:0px;
-width: 90%;
-color:green;
-font-weight:bold;
-outline:none;
+  border:0px solid white;
+  border-style:none;
+  font-size:11pt;
+  font-family:monospace;
+  margin:0px;
+  width: 90%;
+  color:green;
+  font-weight:bold;
+  outline:none;
 
 }
 
 #container {
-       border: solid 2px blue;
-       width: 320px;
-       padding: 10px 10px 10px 10px;
+  border: solid 2px blue;
+  width: 320px;
+  padding: 10px 10px 10px 10px;
 }
 body {
-        font-size: 10pt;
-        font-family: sans-serif;
+  font-size: 10pt;
+  font-family: sans-serif;
+  background-color:black;
 }
 
 input
 {
-font-size:8pt;
+  font-size:8pt;
 }
 
+
+#stdout{
+  border:none 0px;
+  font-family:monospace;
+  color:green;
+  margin:0px;
+  width: 90%;
+}
+
+#header {
+  border:none 0px;
+  font-family:"asciid";
+  color:green;
+}
+
+#main-text {
+  font-size:90px;
+}
+
+#tag-text {
+font-size:15px;
+}
+
+#stdin {
+  border: none 0px;
+  font-family: monospace;
+  font-size: 12px;
+  margin: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  width: 100%;
+  font-weight:bold;
+  color:green;
+}
+.stdinput {
+  background:black;
+}
+
+#stdout-executed {
+  font-weight:bold;
+  color:green;
+}
+.stdin2 {
+  border: none 0px;
+  font-family: monospace;
+  font-size: 12px;
+  margin: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  width: 100%;
+  font-weight:bold;
+  color:green;
+  outline:none;
+}
+
+
+input.stdinput {
+  border:0px solid white;
+  border-style:none;
+  font-size:11pt;
+  font-family:monospace;
+  margin:0px;
+  width: 90%;
+  color:green;
+  font-weight:bold;
+  outline:none;
+
+}
+
+#container {
+  border: solid 2px blue;
+  width: 320px;
+  padding: 10px 10px 10px 10px;
+}
+body {
+  font-size: 10pt;
+  font-family: sans-serif;
+  background-color:black;
+}
+
+input
+{
+  font-size:8pt;
+}
+
+h1, p, a, body {
+  font-family:"ubuntu";
+  font-size:13pt;
+}
 
