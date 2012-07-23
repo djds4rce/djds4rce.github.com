@@ -2,6 +2,10 @@ $(document).ready(function() {
   $('#in').focus();
   typeWriter();
   $('#commandin').submit(handleSubmit);
+
+  $(document).click(function(){
+    $('#in').focus();
+  });
 });
 
 function typeWriter() {
@@ -17,7 +21,7 @@ function typeWriter() {
 
 function commandHandler(command) {
   this.command = command;
-  
+
   this.get_text = function() {
     text = getOutput(this.command); 
     $('#stdout-executed').append("<p>daya@interwebs:~/"+this.command+"</p>");
@@ -25,13 +29,13 @@ function commandHandler(command) {
   }
 
   this.open_tab = function () {
-    var url = getURL(command)
-    if (!(url=='')){
+    url = urls[command];
+    if (!(url==undefined)){
       window.open(url);
       return false;
     }
   }
-  
+
   this.extra_options = function () {
     extraHandler(command)
   }
@@ -48,3 +52,9 @@ function handleSubmit(event){
   $('#in').val('');
   $('#in').focus();
 }
+
+var urls = {
+  blog: 'http://djds4rce.wordpress.com',
+  twitter: 'http://twitter.com/notsosleepy',
+  github: 'http://github.com/djds4rce'
+};
