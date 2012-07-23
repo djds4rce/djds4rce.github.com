@@ -15,9 +15,9 @@ function getOutput(command){
 
     case "help":
     text =  "<p><pre>whoami                   Prints info about me</pre></p>";
-    text += "<p><pre>shoutouts                  People who helped me in making this page</pre></p>"; 
+    text += "<p><pre>shoutouts                People who helped me in making this page</pre></p>"; 
     text += "<p><pre>blog/twitter/github      type one of the sites to go to those pages</pre></p>";
-    text += "<p><pre>contact                    Prints my email</pre></p>";
+    text += "<p><pre>contact                  Prints my email</pre></p>";
     text += "<p><pre>clear                    Clears the output console</pre></p>";
     break
 
