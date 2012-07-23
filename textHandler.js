@@ -26,7 +26,7 @@ function getOutput(command){
     text += "<p><pre>Sandeep                  For the inspirations</pre></p>"; 
     text += "<p><pre>Vineet(Gampa)            For the laptop</pre></p>";
     text += "<p><pre>Pai Suhas                For always being there</pre></p>";
-    text += "<p><pre>Moshin                   \\m/</pre></p>";
+    text += "<p><pre>Mohsin Khawas            \\m/</pre></p>";
     break
 
     case "blog":
