@@ -13,7 +13,7 @@ function getURL(command) {
     break
 
     case "github":
-      url = "htpp://github.com/djds4rce";
+      url = "http://github.com/djds4rce";
     break
 
     default:
