@@ -4,7 +4,7 @@ function getOutput(command){
 
     case "whoami": 
       text =  "<p><pre>Hello there, Iam Dayanand aka Djd.</pre></p>";
-    text += "<p><pre>Iam a web developer, currently working on Ruby on Rails. Javascript and Linux are my other interests </pre></p>";
+    text += "<p><pre>Iam a web developer, currently working on Ruby on Rails. JavaScript and Linux are my other interests </pre></p>";
     text += "<p><pre>I also love Travelling and reading about History and Travel</pre></p>";
     text += "<p><pre>Currently living in India,Bangalore</pre></p>";
     break
