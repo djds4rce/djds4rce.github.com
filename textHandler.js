@@ -3,10 +3,10 @@ function getOutput(command){
   switch(command){
 
     case "whoami": 
-      text =  "<p><pre>Hello there, Iam Dayanand aka Djd.</pre></p>";
-    text += "<p><pre>Iam a web developer, currently working on Ruby on Rails. JavaScript and Linux are my other interests </pre></p>";
-    text += "<p><pre>I also love Travelling and reading about History and Travel</pre></p>";
-    text += "<p><pre>Currently living in India,Bangalore</pre></p>";
+      text =  "<p><pre>Hello there, I am Dayanand aka Djd.</pre></p>";
+    text += "<p><pre>I am a web developer, currently working on Ruby on Rails. JavaScript and Linux are my other interests </pre></p>";
+    text += "<p><pre>I also love travelling and reading about History and Travel</pre></p>";
+    text += "<p><pre>Currently living in Bangalore, India</pre></p>";
     break
 
     case "contact":
