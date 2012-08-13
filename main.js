@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  mixpanel.track("view");
   $('#in').focus();
   typeWriter();
   $('#commandin').submit(handleSubmit);
