@@ -13,7 +13,7 @@ storyjs_jsonp_data = {
     {
       "startDate":"1889,4,20",
       "headline":"A child was born",
-      "text":"<p>He grows up to be the most voilent villan the world has ever seen</p>",
+      "text":"<p>He grows up to be the most violent villan the world has ever seen</p>",
       "asset":
       {
         "media":"http://upload.wikimedia.org/wikipedia/commons/c/ce/Bundesarchiv_Bild_183-1989-0322-506%2C_Adolf_Hitler%2C_Kinderbild.jpg",
@@ -81,7 +81,7 @@ storyjs_jsonp_data = {
     {
       "startDate":"1944",
       "headline":"D day",
-      "text":"Invasion of Normandy is considered the turning point in the war, Colossus played a major role during D day",
+      "text":"Invasion of Normandy is considered as the turning point in the war, Colossus played a major role during D day",
       "asset":
       {
         "media":"http://upload.wikimedia.org/wikipedia/commons/a/a5/Into_the_Jaws_of_Death_23-0455M_edit.jpg",
@@ -92,7 +92,7 @@ storyjs_jsonp_data = {
     {
       "startDate":"1946",
       "headline":"Post War",
-      "text":"The importance of Electronic machines for calcuation was realized during the war. This led to the development of computers like the ENIAC",
+      "text":"The importance of Electronic machines in calcuation was realized during the war. This led to the development of computers such as the ENIAC",
       "asset":
       {
         "media":"http://upload.wikimedia.org/wikipedia/commons/4/4e/Eniac.jpg",
@@ -103,7 +103,7 @@ storyjs_jsonp_data = {
     {
       "startDate":"1958",
       "headline":"Modem",
-      "text":"In short for Modulator-Demodulator, A modem converted Digital Signals to Analog and vice versa",
+      "text":"Short for Modulator-Demodulator. A modem converts Digital Signals to Analog and vice versa",
       "asset":
       {
         "media":"http://upload.wikimedia.org/wikipedia/commons/e/e5/Analogue_modem_-_acoustic_coupler.jpg",
@@ -114,7 +114,7 @@ storyjs_jsonp_data = {
     {
       "startDate":"1967",
       "headline":"The Michigan Terminal System",
-      "text":"Earliest form of computer usage",
+      "text":"Earliest form of computer use",
       "asset":
       {
         "media":"http://www.youtube.com/watch?v=BFUxftCrpJU",
@@ -125,7 +125,7 @@ storyjs_jsonp_data = {
     {
       "startDate":"1968",
       "headline":"ARPANET",
-      "text":"A American Military Funded research network",
+      "text":"An American Military Funded research network",
       "asset":
       {
         "media":"http://www.let.leidenuniv.nl/history/ivh/arpanet1.gif",
@@ -136,7 +136,7 @@ storyjs_jsonp_data = {
     {
       "startDate":"1969",
       "headline":"Multics",
-      "text":"A time Sharing OS by a collabaration between MIT, Bell Labs, G.E",
+      "text":"A time-sharing OS by a collabaration between MIT, Bell Labs and G.E",
       "asset":
       {
         "media":"",
@@ -180,7 +180,7 @@ storyjs_jsonp_data = {
     {
       "startDate":"1989",
       "headline":"Worlds first Web server",
-        "text":"",
+      "text":"",
       "asset":
       {
         "media":"http://upload.wikimedia.org/wikipedia/commons/d/d1/First_Web_Server.jpg",
@@ -266,7 +266,7 @@ storyjs_jsonp_data = {
         "caption":""
       }
     },
- {
+    {
       "startDate":"1998",
       "headline":"Back rub",
       "text":"",
@@ -311,7 +311,7 @@ storyjs_jsonp_data = {
         "caption":""
       }
     },
-{
+    {
       "startDate":"2013,3,2",
       "headline":"Thank you",
       "text":"I am @notsosleepy on twitter",
