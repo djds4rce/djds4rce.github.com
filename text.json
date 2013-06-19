@@ -1,0 +1,21 @@
+{"whoami":["Hello there, I am Dayanand aka Djd.",
+  "I am a web developer, currently working on Ruby on Rails. JavaScript and Linux are my other interests",
+  "I also love travelling and reading about History and Travel",
+  "Currently living in Bangalore, India"],
+  "contact":["You can mail me at djd4rce(at)gmail.com"],
+  "help": ["whoami                   Prints info about me",
+    "shoutouts                People who helped me in making this page", 
+    "blog/twitter/github      type one of the sites to go to those pages",
+    "contact                  Prints my email",
+    "clear                    Clears the output console"],
+
+    "shoutouts":["Devadutta Ghat           For the original UI",
+      "Sandeep                  For the inspirations", 
+      "Vineet(Gampa)            For the laptop",
+      "Pai Suhas                For always being there",
+      "Mohsin Khawas            \\m/"],
+      "blog":["New tab open with http://djds4rce.wordpress.com"],
+      "twitter":["New tab open with http://twitter.com/notsosleepy"],
+      "github":["New tab open with http://github.com/djds4rce"]
+}
+
