@@ -68,7 +68,7 @@ input.stdinput {
   font-size:11pt;
   font-family:monospace;
   margin:0px;
-  width: 90%;
+  width: auto%;
   color:green;
   font-weight:bold;
   outline:none;
