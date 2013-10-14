@@ -35,9 +35,5 @@ function TerminalCtrl($scope,$http,$timeout){
   }
 
 
-  $scope.focus = function(){
-    $('#in').focus();
-  }
-
 }
 
