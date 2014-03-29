@@ -1,5 +1,5 @@
 ##  Advantages?
 
 * Prevents Boiler Plate Code to Joining HTML strings.
-* Abstracts HTML generation from code logic. 
-* Much Cleaner Code.
+* Abstract view logic in views.
+* Offload the work generating HTML to the client.
