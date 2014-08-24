@@ -113,7 +113,7 @@ angular.module('trello')
       if(ui.item.sortable.dropindex == ui.item.sortable.index){
         return;
       }
-      var movedList = sortWithin(ui.item.sortable,$scope.lists.data);
+      var movedList = sortable.sortWithin(ui.item.sortable,$scope.lists.data);
       $scope.lists.update(movedList.id,movedList);
       $scope.lists.data = $filter('orderBy')($scope.lists.data,'order',true);
     }
