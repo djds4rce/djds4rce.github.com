@@ -1,0 +1,183 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  box-sizing: border-box;
+}
+
+body,html{
+  width: 100%;
+  margin:0;
+  height: 100%;
+}
+.content {
+  height: 100%;
+  width: 100%;
+}
+.navbar {
+  height: 30px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: black;
+}
+.navbar > span {
+  float: right;
+}
+.container{
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px #1ABC9C solid;
+  height: 95%;
+  padding-top: 35px;
+}
+.list {
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+  width: 100%;
+  height: 100%;
+}
+.list > div{
+  width: 200px;
+  min-height: 50px;
+  display: inline-block;
+  border: 1px black solid;
+  vertical-align: top;
+  max-height: 90%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background:#95A5A6;
+}
+.list > div + div {
+  margin-left: 5px;
+}
+
+.list-head {
+  border: 8px #16A085 solid;
+  text-align: center;
+  background:#7F8C8D;
+}
+.items {
+  padding-left: 0px;
+  min-height: 20px;
+}
+.items > li {
+  border: 4px #1ABC9C solid;
+  list-style-type:none;
+  text-align: center;
+  z-index: 10000;
+  background: white;
+  margin-bottom: 5px;
+  min-height: 40px;
+  min-width: 20px;
+}
+
+.edited-item {
+  height: 124px;
+}
+#dropdown {
+  position: fixed;
+  top: 15%;
+  left: 45%;
+  background: pink;
+}
+
+.btn-block {
+  white-space: normal;
+}
+.btn-lg {
+  padding: 10px 19px;
+  font-size: 17px;
+  line-height: 1.471;
+  border-radius: 6px;
+}
+.btn-primary {
+  color: #ffffff;
+  background-color: #1abc9c;
+}
+.btn {
+  border: none;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.4;
+  border-radius: 4px;
+  padding: 10px 15px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+  transition: border .25s linear, color .25s linear, background-color .25s linear;
+}
+
+#create-list {
+  min-height: 75px;
+}
+#create-list > form > div {
+  margin: 0 auto;
+}
+
+#add-list-button {
+  top: 10px;
+  position: relative;
+}
+
+.create-box > input {
+  display: block;
+  margin: 10px auto;
+}
+.create-box > textarea {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+}
+
+.create-box > div{
+  margin: 0 auto;
+  width: 35%;
+}
+
+.item-content {
+  height: 60px;
+}
+.edited-list {
+  height: 95px;
+}
+
+.float-right {
+  float:right;
+  margin-right: 5px;
+}
+
+.glyphicon-pencil:before {
+  content: "\270f";
+}
+.glyphicon-trash:before {
+  content: "\e020";
+}
+.glyphicon-plus:before {
+  content: "\2b";
+}
+.glyphicon-remove:before {
+  content: "\e014";
+}
+.item-font {
+  font-size: 12px;
+}
+.searched-item {
+  border: 4px red solid !important;
+}

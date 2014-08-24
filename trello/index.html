@@ -1,0 +1,89 @@
+<!doctype html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body ng-app="trello"  ng-controller='MainCtrl'>
+<div class='navbar'>
+  <input placeholder='type your search query here' ng-model='searchObj.query' ng-model-options="{debounce:1000}">
+</div>
+<div class='container'>
+  <div class='list' ui-sortable='sortableListOptions' ng-model='lists.data'>
+    <div ng-repeat="list in lists.data track by list.id | orderBy:'id'">
+      <div ng-class='{"edited-list": inputFlags.editList==list.id}' class='list-head'>
+        <div  ng-hide='inputFlags.editList==list.id'>
+          <span class='glyphicon glyphicon-pencil' ng-click='editList(list.id)'></span>
+          <span class='glyphicon glyphicon-trash' ng-click='deleteList(list.id)'></span>
+          <span class='glyphicon glyphicon-plus' ng-click='newItem(list.id)'></span></br>
+          <span><b>{{list.name}}</b></span>
+        </div>
+        <form ng-if='inputFlags.editList==list.id' name='updateListForm'>
+          <div class='create-box'>
+            <span class='glyphicon glyphicon-remove float-right' ng-click='cancelOperation()'></span>
+            <input placeholder='Add list Name' ng-model='editListObject.name' required>
+            <div ng-hide='updateListForm.$invalid'><span class='btn btn-block btn-lg btn-primary' ng-click='updateList(list.id)'>Update</span>
+            </div>
+          </div>
+        </form>
+      </div>
+      <ul class='items' ui-sortable="sortableItemsOptions"  ng-model='list.items'>
+        <li class='edited-item' ng-if='inputFlags.addItemListId==list.id'>
+        <form name='addItemForm'>
+          <div class='create-box'>
+            <span class='glyphicon glyphicon-remove float-right' ng-click='cancelOperation()'></span>
+            <textarea required placeholder='add Content of your note' class='item-content' ng-model='newItemObj.content'></textarea>
+            <div ng-hide='addItemForm.$invalid'><span class='btn btn-block btn-lg btn-primary' ng-click='addItem(list.id)'>Add</span></div>
+          </div>
+        </form>
+        </li>
+        <li class='item' ng-class='{"edited-item": inputFlags.itemEditId==item.id, "searched-item":isSearched(item.id)}' ng-repeat='item in list.items track by item.id'> 
+        <div ng-hide='inputFlags.itemEditId==item.id'>
+          <span class='glyphicon glyphicon-pencil float-right item-font' ng-click='editItem(item.id)'></span>
+          <span class='glyphicon glyphicon-trash float-right item-font' ng-click='deleteItem(item.id)'></span></br>
+          <span>{{item.content}}</span>
+        </div>
+        <form name='itemEditForm' ng-if='inputFlags.itemEditId==item.id'>
+          <div class='create-box'>
+            <span class='glyphicon glyphicon-remove float-right' ng-click='cancelOperation()'></span>
+            <textarea required placeholder='add Content of your note' class='item-content' ng-model='newItemObj.content'></textarea>
+            <div ng-hide='itemEditForm.$invalid'><span class='btn btn-block btn-lg btn-primary' ng-click='updateItem(item.id)'>Update</span></div>
+          </div>
+        </form>
+        </li>
+      </ul>
+    </div>
+    <div id='create-list'>
+      <form novalidate name='createListForm'>
+        <div class='create-box'>
+          <input required placeholder='Add list Name' ng-model='newListObject.name'>
+          <div ng-hide='createListForm.$invalid'><button class='btn btn-block btn-lg btn-primary' ng-click='addList()'>Create</button></div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div id='dropdown' style='display:none;'>
+  <ul>
+    <li> Edit</li>
+    <li>Create new Note</li>
+  </ul>
+</div>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/jquery-ui/ui/core.js"></script>
+<script src="bower_components/jquery-ui/ui/widget.js"></script>
+<script src="bower_components/jquery-ui/ui/mouse.js"></script>
+<script src="bower_components/jquery-ui/ui/sortable.js"></script>
+<script src="bower_components/sortable/sortable.js"></script>
+<script src="bower_components/lodash/dist/lodash.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<script src="scripts/services/storage.js"></script>
+<script src="scripts/services/search.js"></script>
+<script src="scripts/services/sortable.js"></script>
+</body>
+</html>
