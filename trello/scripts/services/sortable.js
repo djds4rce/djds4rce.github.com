@@ -34,7 +34,12 @@ angular.module('trello')
         movedRecord.order = records[0].order + Math.pow(2,6);
       }
       else {
-        movedRecord.order = (records[indexOfMovedRecord-1].order + records[indexOfMovedRecord].order)/2;
+        if(sortable.index < indexOfMovedRecord){
+          movedRecord.order = (records[indexOfMovedRecord+1].order + records[indexOfMovedRecord].order)/2;
+        }
+        else{
+          movedRecord.order = (records[indexOfMovedRecord-1].order + records[indexOfMovedRecord].order)/2;
+        }
       }
       return movedRecord;
     },
