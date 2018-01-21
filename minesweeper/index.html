@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Minesweeper Game</title>
+		<link rel="stylesheet" href="css/styles.min.css">
+
+	</head>
+	<body>
+		<div id='content' class='container-fluid'>
+ 			 <div class="row">
+ 			 	 <div class="col-sm" id='content'></div>
+ 			 </div>
+		</div>
+		 <script src="js/bundle.min.js"></script>
+
+
+		<script id="main-template" type="text/x-handlebars-template">
+			<div class="nav_fix"></div>
+			<div class='new-game-button'><button class="btn btn-primary">New Game</button></div>
+
+			<div id='game-container' style="width:{{viewPortWidth}}px;height: {{viewPortHeight}}px">
+			</div>
+		</script>
+		<script id='game-template' type="text/x-handlebars-template">
+				{{#repeat totalBoxes}}
+						{{>box}}
+				{{/repeat}}
+		</script>
+		<script id="box-template" type="text/x-handlebars-template">
+			<div class='box {{get_box_class @index isEndGame}}'  data-boxid='{{@index}}'>
+			<div class='box-content'>
+				{{box_content @index isEndGame}}
+			</div>
+		</div>
+		</script>
+	</body>
+</html>
